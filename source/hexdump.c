@@ -1,4 +1,27 @@
+/***********************************************************************
+ * @file      uart.c
+ * @version   1.0
+ * @brief     This file contains two function Init_UART0 and UART0_IRQHandler
+ *				Init_UART0  this function initializes the UART0 by configuring the registers
+ *				UART0_IRQHandler This function is callled whenever UART is called
+ *				the priority of the UART is 2
+ *
+ * @author    Swapnil Ghonge swapnil.ghonge@colorado.edu
+ * @date      April 1, 2022
+ *
+ * @institution University of Colorado Boulder (UCB)
+ * @course      ECEN 5813: Principles of Embedded Software
+ * @instructor  Howdy Pierce
+ *
+ *
+ *
+ * @resources Took reference Alexander Dean's code and Prof's Lecture Notes.
+ *             Collaborated with Ishaan and Bhargav for understanding the concept.
 
+ * @copyright  All rights reserved. Distribution allowed only for the
+ * use of assignment grading. Use of code excerpts allowed at the
+ * discretion of author. Contact for permission.
+ */
 
 
 #include <MKL25Z4.H>
@@ -43,7 +66,7 @@ void Hexdump(void *addr, size_t nbytes)
 
 	  if(nbytes>640)
 	  {
-		  printf("Enter value of length between 0-640\r\n");
+		  printf("Enter value of address length between 0-640\r\n");
 		  return;
 	  }
 

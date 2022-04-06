@@ -1,2 +1,2 @@
-hexdump.c:25:6:Convert_to_hex	16	static
-hexdump.c:39:6:Hexdump	40	static
+hexdump.c:48:6:Convert_to_hex	16	static
+hexdump.c:62:6:Hexdump	40	static
